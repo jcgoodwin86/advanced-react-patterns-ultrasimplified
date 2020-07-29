@@ -107,7 +107,6 @@ const useClapAnimation = ({ clapEl, countEl, clapTotalEl }) => {
 /**
  *  useDOMRef Hook
  */
-
 const useDOMRef = () => {
   const [DOMRef, setRefState] = useState({});
 
@@ -123,7 +122,6 @@ const useDOMRef = () => {
 /**
  * custom hook for useClapState
  */
-
 const useClapState = (initialState = INITIAL_STATE) => {
   const MAXIMUM_USER_CLAP = 50;
   const [clapState, setClapState] = useState(initialState);
@@ -142,7 +140,6 @@ const useClapState = (initialState = INITIAL_STATE) => {
 /**
  * custom useEffectAfterMount hook
  */
-
 const useEffectAfterMount = (cb, deps) => {
   const componentJustMounted = useRef(true);
   useEffect(() => {
